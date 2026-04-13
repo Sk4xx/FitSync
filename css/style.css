@@ -68,12 +68,13 @@ body {
 .hero-title {
     font-size: 80px; /* Tamaño masivo para impacto */
     font-weight: 900; /* Lo más grueso de Poppins */
-    line-height: 1;
+    line-height: 1.1;
     margin-bottom: 20px;
 }
 
 .yellow-text {
     color: #d7ff00; /* Su color amarillo de marca */
+    padding-top: 5px;
 }
 
 .hero-subtitle {
