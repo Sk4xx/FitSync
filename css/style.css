@@ -9,6 +9,11 @@ body {
     font-family: 'Poppins', sans-serif;
     color: white;
 }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -107,4 +112,143 @@ body {
 
 .btn-secondary:hover {
     background: #1a1a1a;
+}
+/*   ESTILO ACERCA DE NOSOTROS    */
+/* --- ABOUT SECTION --- */
+.about {
+    padding: 120px 0; /* Espacio arriba y abajo para que se sienta como una sección aparte */
+    /*background-color: #050505; /* Un negro casi total para diferenciar del Hero */
+    display: flex;
+    justify-content: center; /* Centra el contenedor en la pantalla */
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1200px; /* Evita que el texto se estire demasiado en pantallas grandes */
+    display: flex;
+    align-items: center; /* Centra verticalmente imagen y texto */
+    gap: 80px; /* Espacio de "aire" entre la caja de imagen y la de texto */
+}
+
+/* Caja de la izquierda (Imagen) */
+.about-image {
+    flex: 1;
+}
+
+.image-box {
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/runner.png');
+    background-size: cover;     /* Fuerza a la imagen a cubrir toda la caja */
+    background-position: center; /* Centra la imagen para que no se vea solo una esquina */
+    background-repeat: no-repeat;
+    filter: brightness(0.7) grayscale(0.2);
+    border: 1px solid #d7ff00; /* El borde amarillo que le da el toque pro */
+    border-radius: 8px;
+    
+}
+/* Caja de la derecha (Texto) */
+.about-content {
+    flex: 1;
+}
+
+.section-tag {
+    color: #d7ff00;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about-title {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.about-title span {
+    color: #d7ff00;
+}
+
+.about-description {
+    color: #888;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* --- FOOTER --- */
+.main-footer {
+    background-color: #111111;
+    padding: 80px 0 20px 0;
+    border-top: 1px solid #1a1a1a; /* Línea sutil para separar del About */
+}
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Para que en móvil se acomode uno abajo de otro */
+    gap: 40px;
+}
+.footer-brand {
+    flex: 2; /* Le damos más espacio al logo y descripción */
+    min-width: 250px;
+}
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+.footer-brand p {
+    color: #888;
+    max-width: 300px;
+}
+.footer-links, .footer-social {
+    flex: 1;
+    min-width: 150px;
+}
+.footer-links h4, .footer-social h4 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.footer-links ul {
+    list-style: none;
+}
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+.footer-links ul li a {
+    color: #888;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-links ul li a:hover {
+    color: #d7ff00; /* Resalta en amarillo al pasar el mouse */
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 60px;
+    border-top: 1px solid #111;
+    margin-top: 60px;
+}
+.footer-bottom p {
+    color: #444;
+    font-size: 12px;
+}
+.social-icons a {
+    color: #fff; /* Iconos blancos */
+    font-size: 24px; /* Tamaño más grande */
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d7ff00; /* Se ponen amarillos al pasar el mouse */
+    transform: translateY(-5px); /* Pequeño brinco hacia arriba */
+    display: inline-block;
 }
