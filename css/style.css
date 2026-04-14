@@ -114,9 +114,6 @@ header{
 .btn-secondary:hover {
     background: #1a1a1a;
 }
-.about {
-    display: none; !important 
-}
 /*   ESTILO FEATURES              */
 /* --- FEATURES SECTION --- */
 .features {
