@@ -64,6 +64,7 @@ header{
 }
 /*                     ESTILO DE LA SECCION DE MOTIVACION                       */
 .hero {
+    background-image: url('../img/gym.png');
     height: 90vh; /* Ocupa casi toda la pantalla */
     display: flex;
     align-items: center; /* Centra el texto verticalmente */
@@ -84,7 +85,7 @@ header{
 
 .hero-subtitle {
     font-size: 20px;
-    color: #888;
+    color: #ffffff;
     max-width: 600px;
     margin-bottom: 40px;
 }
@@ -112,6 +113,59 @@ header{
 
 .btn-secondary:hover {
     background: #1a1a1a;
+}
+/*   ESTILO FEATURES              */
+/* --- FEATURES SECTION --- */
+.features {
+    padding: 100px 0;
+    background-color: #0a0a0a; /* Volvemos al negro del Hero */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #111;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #1a1a1a;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* El toque FitSync: Iluminar al pasar el mouse */
+.feature-card:hover {
+    border-color: #d7ff00;
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 45px;
+    color: #d7ff00;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #888;
+    line-height: 1.5;
 }
 /*   ESTILO ACERCA DE NOSOTROS    */
 /* --- ABOUT SECTION --- */
