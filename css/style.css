@@ -3,17 +3,68 @@
     padding: 0;
     box-sizing: border-box;
 }
- /*                           ESTILO DEL MENU DE NAVEGACION                     */
+
+/*                           BARRA DE ANUNCIOS (PULSO)                         */
+.top-announcement {
+    background-color: rgba(215, 255, 0, 0.95);
+    color: #0a0a0a;
+    padding: 5px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1002;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid #d7ff00;
+    backdrop-filter: blur(5px);
+}
+
+.announcement-slider {
+    display: inline-block;
+}
+
+.announcement-slider p {
+    display: inline-block;
+    margin: 0;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    animation: pulse-text 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-text {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*                           ESTILO DEL MENU DE NAVEGACION                     */
 body {
     background-color: #0a0a0a;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
-header{
+
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -22,25 +73,29 @@ header{
     background-color: #0a0a0a;
     border-bottom: 1px solid #1a1a1a;
 }
+
 .nav-menu a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.5px;
     transition: 0.3s;
-    
+
 }
+
 .header-right {
-    display: flex;       
-    align-items: center; 
-    gap: 40px;           
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
+
 .nav-menu a:hover {
     color: #d7ff00;
 }
+
 .nav-menu ul {
     display: flex;
     list-style: none;
@@ -48,11 +103,13 @@ header{
     margin: 0;
     padding: 0;
 }
+
 .brand img {
     max-width: 200px;
     height: auto;
     display: block;
 }
+
 /*                        ESTILO DEL BOTON DE LOGIN                              */
 .btn-login {
     background-color: #d7ff00;
@@ -62,24 +119,30 @@ header{
     font-weight: 900;
     text-decoration: none;
 }
+
 /*                     ESTILO DE LA SECCION DE MOTIVACION                       */
 .hero {
     background-image: url('../img/gym.png');
-    height: 90vh; /* Ocupa casi toda la pantalla */
+    height: 90vh;
+    /* Ocupa casi toda la pantalla */
     display: flex;
-    align-items: center; /* Centra el texto verticalmente */
+    align-items: center;
+    /* Centra el texto verticalmente */
     padding: 0 5%;
 }
 
 .hero-title {
-    font-size: 80px; /* Tamaño masivo para impacto */
-    font-weight: 900; /* Lo más grueso de Poppins */
+    font-size: 80px;
+    /* Tamaño masivo para impacto */
+    font-weight: 900;
+    /* Lo más grueso de Poppins */
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
 .yellow-text {
-    color: #d7ff00; /* Su color amarillo de marca */
+    color: #d7ff00;
+    /* Su color amarillo de marca */
     padding-top: 5px;
 }
 
@@ -114,15 +177,18 @@ header{
 .btn-secondary:hover {
     background: #1a1a1a;
 }
+
 /*   ESTILO FEATURES              */
 /* --- FEATURES SECTION --- */
 .features {
     min-height: 100vh;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
     align-items: center;
     padding: 100px 0;
-    background-color: #0a0a0a; /* Volvemos al negro del Hero */
+    background-color: #0a0a0a;
+    /* Volvemos al negro del Hero */
 }
 
 .section-title {
@@ -134,7 +200,8 @@ header{
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas iguales */
     gap: 30px;
     width: 90%;
     max-width: 1200px;
@@ -171,21 +238,27 @@ header{
     color: #888;
     line-height: 1.5;
 }
+
 /*   ESTILO ACERCA DE NOSOTROS    */
 /* --- ABOUT SECTION --- */
 .about {
-    padding: 120px 0; /* Espacio arriba y abajo para que se sienta como una sección aparte */
+    padding: 120px 0;
+    /* Espacio arriba y abajo para que se sienta como una sección aparte */
     /*background-color: #050505; /* Un negro casi total para diferenciar del Hero */
     display: flex;
-    justify-content: center; /* Centra el contenedor en la pantalla */
+    justify-content: center;
+    /* Centra el contenedor en la pantalla */
 }
 
 .about-container {
     width: 90%;
-    max-width: 1200px; /* Evita que el texto se estire demasiado en pantallas grandes */
+    max-width: 1200px;
+    /* Evita que el texto se estire demasiado en pantallas grandes */
     display: flex;
-    align-items: center; /* Centra verticalmente imagen y texto */
-    gap: 80px; /* Espacio de "aire" entre la caja de imagen y la de texto */
+    align-items: center;
+    /* Centra verticalmente imagen y texto */
+    gap: 80px;
+    /* Espacio de "aire" entre la caja de imagen y la de texto */
 }
 
 /* Caja de la izquierda (Imagen) */
@@ -197,14 +270,18 @@ header{
     width: 100%;
     height: 500px;
     background-image: url('../img/runner.png');
-    background-size: cover;     /* Fuerza a la imagen a cubrir toda la caja */
-    background-position: center; /* Centra la imagen para que no se vea solo una esquina */
+    background-size: cover;
+    /* Fuerza a la imagen a cubrir toda la caja */
+    background-position: center;
+    /* Centra la imagen para que no se vea solo una esquina */
     background-repeat: no-repeat;
     filter: brightness(0.7) grayscale(0.2);
-    border: 1px solid #d7ff00; /* El borde amarillo que le da el toque pro */
+    border: 1px solid #d7ff00;
+    /* El borde amarillo que le da el toque pro */
     border-radius: 8px;
-    
+
 }
+
 /* Caja de la derecha (Texto) */
 .about-content {
     flex: 1;
@@ -236,77 +313,101 @@ header{
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
 /* --- FOOTER --- */
 .main-footer {
     background-color: #111111;
     padding: 80px 0 20px 0;
-    border-top: 1px solid #1a1a1a; /* Línea sutil para separar del About */
+    border-top: 1px solid #1a1a1a;
+    /* Línea sutil para separar del About */
 }
+
 .footer-container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Para que en móvil se acomode uno abajo de otro */
+    flex-wrap: wrap;
+    /* Para que en móvil se acomode uno abajo de otro */
     gap: 40px;
 }
+
 .footer-brand {
-    flex: 2; /* Le damos más espacio al logo y descripción */
+    flex: 2;
+    /* Le damos más espacio al logo y descripción */
     min-width: 250px;
 }
+
 .footer-logo {
     max-width: 150px;
     margin-bottom: 20px;
 }
+
 .footer-brand p {
     color: #888;
     max-width: 300px;
 }
-.footer-links, .footer-social {
+
+.footer-links,
+.footer-social {
     flex: 1;
     min-width: 150px;
 }
-.footer-links h4, .footer-social h4 {
+
+.footer-links h4,
+.footer-social h4 {
     color: #fff;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
 }
+
 .footer-links ul {
     list-style: none;
 }
+
 .footer-links ul li {
     margin-bottom: 10px;
 }
+
 .footer-links ul li a {
     color: #888;
     text-decoration: none;
     transition: 0.3s;
 }
+
 .footer-links ul li a:hover {
-    color: #d7ff00; /* Resalta en amarillo al pasar el mouse */
+    color: #d7ff00;
+    /* Resalta en amarillo al pasar el mouse */
 }
+
 .footer-bottom {
     text-align: center;
     padding-top: 60px;
     border-top: 1px solid #111;
     margin-top: 60px;
 }
+
 .footer-bottom p {
     color: #444;
     font-size: 12px;
 }
+
 .social-icons a {
-    color: #fff; /* Iconos blancos */
-    font-size: 24px; /* Tamaño más grande */
+    color: #fff;
+    /* Iconos blancos */
+    font-size: 24px;
+    /* Tamaño más grande */
     margin-right: 15px;
     transition: 0.3s;
 }
 
 .social-icons a:hover {
-    color: #d7ff00; /* Se ponen amarillos al pasar el mouse */
-    transform: translateY(-5px); /* Pequeño brinco hacia arriba */
+    color: #d7ff00;
+    /* Se ponen amarillos al pasar el mouse */
+    transform: translateY(-5px);
+    /* Pequeño brinco hacia arriba */
     display: inline-block;
 }
