@@ -114,9 +114,16 @@ header{
 .btn-secondary:hover {
     background: #1a1a1a;
 }
+.about {
+    display: none; !important 
+}
 /*   ESTILO FEATURES              */
 /* --- FEATURES SECTION --- */
 .features {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
     padding: 100px 0;
     background-color: #0a0a0a; /* Volvemos al negro del Hero */
 }
