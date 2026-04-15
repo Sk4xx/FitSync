@@ -42,7 +42,7 @@
                 <article class="product-card">
                     <div class="product-image-container">
                         <!-- Etiqueta img lista para ser usada -->
-                        <img src="../img/gallina.png" alt="Producto 1" class="product-img">
+                        <img src="" alt="Producto 1" class="product-img">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Proteína Whey 100%</h3>
@@ -54,7 +54,7 @@
                 <!-- Tarjeta de Producto 2 -->
                 <article class="product-card">
                     <div class="product-image-container">
-                        <img src="../img/coca.png" alt="Producto 2" class="product-img">
+                        <img src="" alt="Producto 2" class="product-img">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Creatina Monohidratada</h3>
@@ -66,7 +66,7 @@
                 <!-- Tarjeta de Producto 3 -->
                 <article class="product-card">
                     <div class="product-image-container">
-                        <img src="../img/dildo.png" alt="Producto 3" class="product-img">
+                        <img src="" alt="Producto 3" class="product-img">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Guante de Crossfit</h3>
@@ -95,6 +95,25 @@
             <i class="fa-solid fa-cart-shopping"></i>
             <span class="cart-counter" id="cart-counter">0</span>
         </div>
+
+        <!-- Modal / Pestaña Flotante del Carrito -->
+        <div class="cart-overlay" id="cart-overlay"></div>
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-sidebar-header">
+                <h2>Tu Carrito</h2>
+                <button class="close-cart-btn" id="close-cart-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cart-items-container" id="cart-items-container">
+                <!-- Los items del carrito se inyectarán aquí -->
+            </div>
+            <div class="cart-sidebar-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">$0.00</span>
+                </div>
+                <button class="checkout-btn">Proceder al Pago</button>
+            </div>
+        </aside>
 
         <script src="../js/shop.js"></script>
     </body>
