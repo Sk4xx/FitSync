@@ -32,7 +32,7 @@
                 </ul>
             </nav>
         <div class="header-actions">
-                <a href="#" class="btn-login">Iniciar Sesión</a>
+                <a href="login.html" class="btn-login">Iniciar Sesión</a>
             </div>
         </div>
     </header>
@@ -40,6 +40,7 @@
     
     <!-------------SECCION MOTIVACION-------------->
     <section class="hero">
+    <canvas id="heroCanvas"></canvas>
     <div class="hero-container">
         <h1 class="hero-title">
             REGISTRA CADA PESO. <br> 
@@ -51,7 +52,7 @@
         </p>
         <!-------------BOTONES--------------------->
         <div class="hero-btns">
-            <a href="#" class="btn-primary">EMPEZAR AHORA</a>
+            <a href="login.html" class="btn-primary">EMPEZAR AHORA</a>
             <a href="#" class="btn-secondary">VER RUTINAS</a>
         </div>
     </div>
@@ -103,12 +104,6 @@
         </div>
     </section>
         <!------------FIN DE LA SECCION DE ACERCA DE NOSOTROS------->
-        <!--SCRIPT DE ANIMACION DEL SCROLL-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-        <!------------------FIN DEL SCRIPT-------------------------->
         <!------------------FOOTER---------------------------------->
         <footer class="main-footer">
     <div class="footer-container">
@@ -139,5 +134,7 @@
                 <p>&copy; 2026 FitSync - Todos los derechos reservados.</p>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="../js/index.js" defer></script>
 </body>
 </html>

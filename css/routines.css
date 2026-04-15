@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
- /* MENU DE NAVEGACION */
+
+/* MENU DE NAVEGACION */
 body {
     background-color: #0a0a0a;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -17,25 +19,29 @@ body {
     background-color: #0a0a0a;
     border-bottom: 1px solid #1a1a1a;
 }
+
 .nav-menu a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.5px;
     transition: 0.3s;
-    
+
 }
+
 .header-right {
-    display: flex;       
-    align-items: center; 
-    gap: 40px;           
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
+
 .nav-menu a:hover {
     color: #d7ff00;
 }
+
 .nav-menu ul {
     display: flex;
     list-style: none;
@@ -43,11 +49,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .brand img {
     max-width: 200px;
     height: auto;
     display: block;
 }
+
 .btn-login {
     background-color: #d7ff00;
     color: #0a0a0a;

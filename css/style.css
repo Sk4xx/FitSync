@@ -122,13 +122,30 @@ header {
 
 /*                     ESTILO DE LA SECCION DE MOTIVACION                       */
 .hero {
-    background-image: url('../img/gym.png');
+    position: relative;
     height: 90vh;
-    /* Ocupa casi toda la pantalla */
     display: flex;
     align-items: center;
-    /* Centra el texto verticalmente */
     padding: 0 5%;
+    overflow: hidden;
+    background-color: #0a0a0a;
+    /* fallback mientras carga el canvas */
+}
+
+/* El canvas ocupa todo el espacio del hero como fondo */
+#heroCanvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+}
+
+/* El contenido (texto + botones) queda por encima del canvas */
+.hero-container {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-title {
